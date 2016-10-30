@@ -79,8 +79,29 @@ watch --> [*]
 @enduml
 ```
 
+* การใช้งานfacebook : 4
+![]
+(http://www.plantuml.com/plantuml/img/SoWkIImgAStDuOhMYbNGrRLJoCbFpynJTdCpDB4qvW9pmC9fYScfIVdvsLnSG1qbgN2-ieM9kO6Rcq8rbu82p0YGYj9YPNDdDsS30oJnWlpY4apHvFpStDGyc8G2ian68XRrEPdPgLWK9-Na9sV3L7FLSi4S29O4AkBYSaZDIm7w5000)
 
 
+```
+@startuml
+[*] --> login#FF1493
+login --> facebook
+
+state facebook#8470FF {
+  [*] --> status#7CFC00
+  [*] --> post#7CFC00
+  [*] --> comment#7CFC00 
+  [*] --> chat#7CFC00
+  [*] --> like#7CFC00 
+  [*] --> block#7CFC00
+
+}
+facebook --> [*]
+
+@enduml
+```
 
 
 
