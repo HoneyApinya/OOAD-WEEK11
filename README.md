@@ -57,6 +57,7 @@ state user#DDA0DD {
 @enduml
 ```
 * การทำงานองนาฬิกาบอกเวลา : 3
+
 ![]
 (http://www.plantuml.com/plantuml/img/JO_12iCW38RlUOg0jqAXrrrAjnLVOkmWLN0m5MnabB5tNupjM3pz_vSFuhIIoLJ24sxT7Vj-n9UXnGDmJwu5DGoQ1z-0A5lZwfOKhT9wFbzEtBOiUdZ4GaxDr_gGMIk4-LJoBbLI8w8GQtuEWvfs458a_-T8RcXp9XyEV41E5S0t0amkMlxM5m00)
 
@@ -80,6 +81,7 @@ watch --> [*]
 ```
 
 * การใช้งานfacebook : 4
+
 ![]
 (http://www.plantuml.com/plantuml/img/SoWkIImgAStDuOhMYbNGrRLJoCbFpynJTdCpDB4qvW9pmC9fYScfIVdvsLnSG1qbgN2-ieM9kO6Rcq8rbu82p0YGYj9YPNDdDsS30oJnWlpY4apHvFpStDGyc8G2ian68XRrEPdPgLWK9-Na9sV3L7FLSi4S29O4AkBYSaZDIm7w5000)
 
@@ -99,6 +101,29 @@ state facebook#8470FF {
 
 }
 facebook --> [*]
+
+@enduml
+```
+
+* การพิมพ์งานเอกสาร : 5
+
+![]
+(http://www.plantuml.com/plantuml/img/JO_R2eCm343VynK5tmP24TdjOIY8Fp76w6nnihKfCJBy-xMiEjzo3k64L2Chuic-uRgxYJo_2FJ6PMrzb8S2uYpEmY6R1-9hOK_Oax9_71mRWX_7XXtl7oITjMLTxYKa3AjQiHB6CSrRYTraWrnLJAHeriX2dYGaNAvj-OcC7VfvSFsgOo4y150PfyDtNm00)
+
+```
+@startuml
+[*] --> open#FA8072
+open : notebook
+open : program
+open : printer
+
+open --> ms_word#F4A460
+ms_word : data entry
+ms_word : document
+ms_word --> printer#D02090
+printer : print
+printer : photocopying
+printer --> [*]
 
 @enduml
 ```
