@@ -56,3 +56,45 @@ state user#DDA0DD {
 }
 @enduml
 ```
+* การทำงานองนาฬิกาบอกเวลา : 3
+![]
+(http://www.plantuml.com/plantuml/img/JO_12iCW38RlUOg0jqAXrrrAjnLVOkmWLN0m5MnabB5tNupjM3pz_vSFuhIIoLJ24sxT7Vj-n9UXnGDmJwu5DGoQ1z-0A5lZwfOKhT9wFbzEtBOiUdZ4GaxDr_gGMIk4-LJoBbLI8w8GQtuEWvfs458a_-T8RcXp9XyEV41E5S0t0amkMlxM5m00)
+
+
+```
+@startuml
+[*] --> watch
+
+state watch#00FFFF {
+  [*] ->second#FFDAB9
+  second --> minute#DCDCDC 
+  minute --> hour#FFDAB9 
+  hour   --> date#DCDCDC
+  date   --> month#FFDAB9 
+  month  --> year#DCDCDC
+
+}
+watch --> [*]
+
+@enduml
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
