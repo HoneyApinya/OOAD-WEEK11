@@ -27,6 +27,8 @@ connected_to_the_phone --> [*]
 
 ```
 * การใช้งานลิฟท์ : 2
+
+
 ![]
 (http://www.plantuml.com/plantuml/img/TL5D2uCm3BttLmIy3GGPOvixoDHEs6yOGyHsGr0hjiN3yBylZRelM2z9Nj_BQzAZDaLlR5CpTbbTmVSZgAkROGnn8odtE8y3pk7108WJmLdK4YiNl5CORdSnAU_AgDngsSC1Xg8oI7bZNfQbGPg0Bv2fEjaYYS9DzK2YKZMkAw4UNoURVUhCobffkTIpfcZ5X8CJJ9bxWUroeOQMq3b_-VwpLTPyDt5ZBHECooPeXDzD8BdhfTQvxSWg238yUFk98icrUb-w2bwB7jbHjW9_u0a0)
 
