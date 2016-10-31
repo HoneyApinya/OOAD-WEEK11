@@ -130,8 +130,27 @@ printer --> [*]
 
 Activity Diagram 5 รูป
 
- * 
+ * การเลือกใช้ทางด่วนกับไม่ใช้ : 1
+ 
+ ![](http://www.plantuml.com/plantuml/img/NOzD3e9034RNz1JDi54J4jo8AuAYN8Auc407nmm_cIbHRc_5bQxQz7rzJOl0slFSEzZijfZa4QhMUcfOHN5LdG_b7i0QLFIQF8Nmr8j2ljC0Y4cIr-ndkltG-9YLr-eKmJU1Qj8BykXSM8sNB4rNucrtP-5o5iW5-WppscXfHSXU6sCRVEZ-trYxSUYGRI-vTNbehG4efCeRRm00)
+ 
+```
+@startuml
+(*) ->	 "direct"	#FFB6C1
 
+if "expressway" then
+  -->[true] "expressway"#87CEFA	
+
+  --> "pay tolls"	#FFD700
+  --right-> (*)
+else
+  ->[false] "traffic jam"#87CEFA	
+
+  -->[long time] (*)
+endif
+
+@enduml
+```
 
 
 
