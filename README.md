@@ -152,7 +152,47 @@ endif
 @enduml
 ```
 
+* การติดต่อสื่อสาร : 2
 
+![](http://www.plantuml.com/plantuml/img/XL71QiCm33tFNo6SopOeU2jZwQKqnSrFb1rCgb23Oez4RN-_icEwzb1c30RflQVtvCt4RkJJG4gzlh_1Oh46tuFkuZ2SWkySemO-Ob0AKdFFIFXxZ05_1EI8z4jbRMEibRxSn2q4a2Dg6GNdw3jHSXEuPRMgs-sg5W3IX1cNHoPSxpgyuui2OSz99dM0_O0oiMrgy_rP4CcNE1FtkN3Jp7v1dmy-GjR-ZnWElbT_hyfAAVPw7wB4lOoUyJwla3KXCuvIDSRkxCTSdINLhAJSyhRMieQIB_kJXPAkshRvCaOzc2f9SeZ40_81dq3dIHjvvIkl)
+
+```
+@startuml
+
+(*) --> if "communicate" then
+
+  -->[telephone] "call"	#DDA0DD
+  
+  if "" then
+    -> "call voice" as a3#98FB98
+  else
+    if "call face" then
+      -left-> "face time"	#FA8072
+        ---->(*)
+    else
+      --> "vdio call "	#FA8072
+        ---->(*)
+    endif
+  endif
+  
+else
+
+  ->[no] "write"	#DDA0DD
+  -->"letter"	#00DED1
+  -->(*)
+  
+endif
+
+a3 --> if "voice" then
+  --> "tell"#FFA500
+    ---->(*)
+else
+  -> "voice line"#FFA500
+    ---->(*)
+endif
+
+@enduml
+```
 
 
 
