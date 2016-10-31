@@ -195,13 +195,39 @@ endif
 ```
 
 
-*  : 3
+* การท่องเที่ยว : 3
 
-![]()
+![](http://www.plantuml.com/plantuml/img/XP71IWCn48RFpLCCxKM57cgX4EWkxKeNl8ZG9nYxSGrDCcKsMr7ntPt4eaiHcqiottpyoP1L5v5ZxvrItTw60p9wUCBTlcNgGtD7ZXWcwtKjQs3WBjgZZM_meG2sAU9a9cy-5rWXVwEHCAqN2s6Rdy21TdPLahN-epEQQ5tNEQSYRimf_j5mBwYc41_G6xZt1tcS-bJgwkOQfjCInf7nQDmObakeJ6i3bALAZQ8eO3jBMoxVYNxnRSO39KUzOZJyZCxz8wPEP_22uMMmY3QSQwbi2Lx8ctoM8PHQcT385tq1)
 
 
 ```
+@startuml
 
+skinparam backgroundColor #AAFFFF
+skinparam activity {
+  StartColor #FFFF33
+  BarColor 	#FF9966
+  EndColor #FFFF33
+  BackgroundColor #FF9999
+  BackgroundColor 	#99FF66
+  BorderColor Peru
+  FontName Impact
+}
+
+(*) --> "travel" << Begin >>
+--> === S1 ===
+--> zoo
+--> === S2 ===
+ === S1 === --> waterfall
+--> === S2 ===
+ === S1 ===--> sea
+--> === S2 ===
+ === S1 ===--> mountain
+--> === S2 ===
+--> go home
+--> (*)
+
+@enduml
 ```
 
 
