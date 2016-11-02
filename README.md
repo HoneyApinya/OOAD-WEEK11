@@ -230,11 +230,44 @@ skinparam activity {
 @enduml
 ```
 
+* การเลือกทานของหวาน : 4
 
+![](http://www.plantuml.com/plantuml/img/ROzDIyD048RFcLynR2ug12g5rBsKVDY05n4y5WzhCsdN9Bjbir54_EzEqhG4wLvcUUVXcPcayyhvlcq0kbgRetAgnNUrg_VEzgRCRMCTXcbQy9iHQkVrf_RV-0E8huDY8WTkkUGmK-uK1Pn96SUSRIx26VPlr01BUQKJX58MnUZ9h2jfqh-GwpaghF7FgYLyQe-y7Fn2ShdivkuMetM0ehAs5CC-MPpV0-WA1Ialq1_8i2EArbllUdf3OPXiI8GFgtnJf040DHq1MxQLuXyJtHUHFmFNL7XsxLHDuzJ7rM8nzfpU7pmJlDWadflnGxMpoIVPW282cL9N00bNlkmF)
 
+```
+@startuml
 
+skinparam backgroundColor #AAFFFF
+skinparam activity {
+  StartColor #FFFF33
+  BarColor 	#FF9966
+  EndColor #FFFF33
+  BackgroundColor #FF9999
+  BackgroundColor 	#99FF66
+  BorderColor Peru
+  FontName Impact
+}
+@startuml
+(*) ->	 "food"	#FFB6C1
 
+if "eat" then
+  -->[true] "noodle"#87CEFA	
 
+else
+ ->[false] "sweet"#87CEFA
+if "eat" then
+  --> [true] "cake"	#FFD700
+  --right-> (*)
+else
+  ->[false] " jam"#87CEFA	
+
+  --> (*)
+  
+endif
+
+@enduml
+
+```
 
 
 
