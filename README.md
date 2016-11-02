@@ -270,4 +270,37 @@ endif
 ```
 
 
+* การสนทนาภาษาอังกฤษ  : 5
+
+![](http://www.plantuml.com/plantuml/img/RO_DQiCm48JFtgTOv4ERWWybu5QNu1zYoAKKUYmvgBQI25kIaUI2ANtthf8qf2MwICpEV3igV10kJ7e0yBqoet12uuTe-xspa-bgErY7QLasTAuSeWtgKuKPlm3nBIBEpkXRBaciX3j92McSvpbfwmlmolPlLJHpVcEIf9mtpP5JMTV9C_vLkecanfhm8hJ4ZHwf77n3SVdP_SC2iovR9SXQON2s4_fHYXwbsG_A7rYiMENr8u3Q8PCYC0m7QGYRPQltMVejiWt6xDzS-lnKhvioWTlZcAQLLkl9g5O4PGq3a8ENWCGrTdiiT1TEkLyS973QZ5ISNY1DftO01TtqdHy0)
+
+```
+@startuml
+
+skinparam backgroundColor #AAFFFF
+skinparam activity {
+  StartColor #FFFF33
+  BarColor 	#FF9966
+  EndColor #FFFF33
+  BackgroundColor #FF9999
+  BackgroundColor 	#99FF66
+  BorderColor Peru
+  FontName Impact
+}
+@startuml
+(*) -d->	 "can you speak english"	#FFB6C1
+
+if "eat" then
+  -->[yes] "I can speak english"#87CEFA	
+ "I can speak english" --> "communication"
+ 
+else
+ ->[no] "can't speak"#87CEFA
+  --> (*)
+  
+endif
+
+@enduml
+```
+
 
